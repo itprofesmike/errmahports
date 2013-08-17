@@ -12,6 +12,9 @@ exports.scanHost = function (request, callback) {
 	//return callback({message: 'Fail', UID: 'N/A'});
 	//Success:
 	//return callback(null, {message: 'Success', UID: '1203090-1209382109-0980983'});
+      //console.log(request.query());
+      return callback(null, {message: 'Results', request.query});	
+	
 };
 
 /**
